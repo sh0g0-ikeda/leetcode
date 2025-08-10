@@ -9,13 +9,13 @@ class Solution(object):
             return []
 
         row = [1]
-        output = [row[:] ]  # 0行目
+        output = [row[:] ]  
 
         for _ in range(1, numRows):
-            for i in range(len(row)-1, 0, -1):   # 右から更新
+            for i in range(len(row)-1, 0, -1):  
                 row[i] = row[i] + row[i-1]
-            row.append(1)                         # 末尾の1
-            output.append(row[:])                 # ここはコピーを入れる
+            row.append(1)                        
+            output.append(row[:])                
 
         return output
 
