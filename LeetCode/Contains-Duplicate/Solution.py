@@ -1,0 +1,1 @@
+return False if len(nums) == len(set(nums)) else True
